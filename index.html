@@ -285,6 +285,39 @@
             line-height: 1.5;
         }
 
+        /* Блок с ключевыми преимуществами P150 */
+        .key-features {
+            margin: 15px 0;
+            padding-left: 0;
+        }
+        .key-features h4 {
+            font-size: 1.2rem;
+            color: #1b4236;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .key-features ul {
+            list-style: none;
+        }
+        .key-features li {
+            padding: 6px 0;
+            color: #3f6256;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            border-bottom: 1px dashed #e0efe7;
+            font-size: 0.95rem;
+        }
+        .key-features li i {
+            color: #2e7d5e;
+            width: 20px;
+            font-size: 1rem;
+            margin-top: 3px;
+        }
+        .key-features li:last-child {
+            border-bottom: none;
+        }
+
         .model-info ul {
             list-style: none;
             margin: 15px 0;
@@ -311,7 +344,7 @@
         }
 
         .price {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             font-weight: 700;
             color: #2e7d5e;
             margin: 15px 0 10px;
@@ -323,7 +356,7 @@
             margin-top: 20px;
         }
 
-        /* Контакты (только телефон и email) */
+        /* Контакты (телефон, email, telegram) */
         .contact {
             padding: 80px 0;
             background: #ffffff;
@@ -501,13 +534,13 @@
         </div>
     </section>
 
-    <!-- Модельный ряд XAG с видео RuTube -->
+    <!-- Модельный ряд XAG с видео RuTube и ценами -->
     <section class="models" id="models">
         <div class="container">
             <h2 class="section-title">Профессиональные дроны XAG</h2>
             <p class="section-subtitle">Мощная техника для интенсивного сельского хозяйства</p>
             <div class="models-grid">
-                <!-- XAG P100 Pro с видео RuTube -->
+                <!-- XAG P100 Pro с видео RuTube и ценой 2.700.000 -->
                 <div class="model-card">
                     <div class="model-video">
                         <iframe src="https://rutube.ru/play/embed/de649216af1eff53a93e49dfb5fbb222" title="XAG P100 Pro video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -523,12 +556,12 @@
                             <li><i class="fas fa-tachometer-alt"></i> Скорость полёта: 13.8 м/с</li>
                             <li><i class="fas fa-weight-hanging"></i> Вес без нагрузки: 54 кг</li>
                         </ul>
-                        <div class="price">Цена по запросу</div>
+                        <div class="price">2 700 000 ₽</div>
                         <a href="#contact" class="btn model-btn">Получить предложение</a>
                     </div>
                 </div>
 
-                <!-- XAG P150 Pro с видео RuTube -->
+                <!-- XAG P150 Pro с видео RuTube, подробным описанием и ценой 3.300.000 -->
                 <div class="model-card">
                     <div class="model-video">
                         <iframe src="https://rutube.ru/play/embed/445ba2d31ca356897e8d1545ea545d32" title="XAG P150 Pro video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -536,7 +569,21 @@
                     <div class="model-info">
                         <h3>XAG P150 Pro</h3>
                         <div class="subtitle">Сельскохозяйственный квадрокоптер</div>
-                        <p class="description">Непревзойденная точность и производительность. Работает в любую погоду: степень защиты IPX6K.</p>
+                        <p class="description">Интеллектуальная агродроновая система, разработанная специально для сельского хозяйства. Непревзойденная точность и производительность.</p>
+                        
+                        <!-- Ключевые преимущества (из текста пользователя) -->
+                        <div class="key-features">
+                            <h4>Ключевые преимущества</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> <strong>Многофункциональность:</strong> Три режима работы: распыление, розлив подкормок, посев. Подходит для различных культур (рис, пшеница, фруктовые деревья).</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Высокая эффективность:</strong> Большая площадь покрытия за вылет, точность внесения благодаря GPS RTK, высокая производительность в пиковые нагрузки.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Интеллектуальные технологии:</strong> Управление через ПО XAG, планирование полётов, автономность, анализ данных в реальном времени.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Надежность и безопасность:</strong> Прочная конструкция, системы предотвращения столкновений и аварийной посадки, защита IPX6K.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Экономическая выгода:</strong> Снижение затрат на топливо и рабочую силу, повышение урожайности и качества продукции.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Технические характеристики -->
                         <ul>
                             <li><i class="fas fa-clock"></i> Обрабатывает за 1 час: до 40 га</li>
                             <li><i class="fas fa-cubes"></i> Макс. грузоподъемность: 75 кг</li>
@@ -545,7 +592,7 @@
                             <li><i class="fas fa-shield-alt"></i> Защита IPX6K</li>
                             <li><i class="fas fa-weight-hanging"></i> Вес без нагрузки: 54 кг</li>
                         </ul>
-                        <div class="price">Цена по запросу</div>
+                        <div class="price">3 300 000 ₽</div>
                         <a href="#contact" class="btn model-btn">Получить предложение</a>
                     </div>
                 </div>
@@ -553,7 +600,7 @@
         </div>
     </section>
 
-    <!-- Контакты (только телефон и почта) -->
+    <!-- Контакты (телефон, email, Telegram) -->
     <section class="contact" id="contact">
         <div class="container">
             <h2 class="section-title">Свяжитесь с нами</h2>
@@ -561,11 +608,15 @@
             <div class="contact-wrapper">
                 <div class="contact-info">
                     <h3>Наши контакты</h3>
-                    <p>Позвоните или напишите — мы поможем выбрать дрон под ваши задачи, рассчитать экономику и организовать обучение.</p>
+                    <p>Позвоните, напишите в Telegram или на почту — мы поможем выбрать дрон под ваши задачи, рассчитать экономику и организовать обучение.</p>
                     <ul class="contact-details">
                         <li>
                             <i class="fas fa-phone-alt"></i>
                             <a href="tel:+79951799918">+7 995 179 99 18</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-telegram"></i>
+                            <a href="https://t.me/+79951799918" target="_blank">+7 995 179 99 18</a>
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
