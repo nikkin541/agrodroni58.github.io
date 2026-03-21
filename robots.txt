@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://agrodron58.ru/sitemap.xml
